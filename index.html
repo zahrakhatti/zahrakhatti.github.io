@@ -1,102 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zahra Khatti | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> <!-- optional for icons -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zahra Khatti — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <img src="profile.jpg" alt="Zahra Khatti" class="profile-pic">
-      <div class="intro">
-        <h1>Zahra Khatti</h1>
-        <p>Ph.D. Student | Industrial & Systems Engineering | Fairness in Machine Learning</p>
-        <div class="contact-links">
-          <a href="mailto:zak223@lehigh.edu">📧 Email</a>
-          <a href="https://linkedin.com/in/zahra-khatti" target="_blank">💼 LinkedIn</a>
-          <a href="https://github.com/zahrakhatti" target="_blank">🐱 GitHub</a>
+  <main class="wrap" role="main" aria-labelledby="name">
+    <!-- Left column -->
+    <section class="card" aria-label="profile">
+      <div class="profile">
+        <span class="photo" aria-hidden="true">
+          <img src="assets/images/profile.jpg" alt="Zahra Khatti photo" />
+        </span>
+        <div>
+          <h1 id="name">Zahra Khatti</h1>
+          <div class="role">Ph.D. Student — Industrial & Systems Engineering</div>
+          <div class="links">
+            <a href="mailto:zahra@example.com">Email</a>
+            <a href="https://github.com/zahrakhatti" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
 
-  <!-- ABOUT ME -->
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      I’m a graduate student at Lehigh University focusing on fairness in machine learning and nonlinear optimization. I develop fairness-aware neural networks, implement large-scale constrained optimization algorithms, and conduct rigorous mathematical analysis.
-    </p>
-    <p>
-      My advisors: <a href="https://coral.ise.lehigh.edu/frankecurtis" target="_blank">Prof. Frank E. Curtis</a> and <a href="https://coral.ise.lehigh.edu/danielprobinson" target="_blank">Prof. Daniel P. Robinson</a>
-    </p>
-  </section>
-
-  <!-- NEWS -->
-  <section id="news" class="container">
-    <h2>News & Updates</h2>
-    <ul>
-      <li>2025: Co-chairing the 2026 MOPTA conference at Lehigh University.</li>
-      <li>2025: Published research on fairness in supervised learning (<a href="https://arxiv.org/abs/2505.15788" target="_blank">arXiv</a>).</li>
-      <li>2024: Received recognition for developing constraint-based fairness optimization methods.</li>
-    </ul>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>Fairness-Constrained Neural Nets</h3>
-        <p>PyTorch models enforcing fairness via constraints.</p>
-        <a href="https://github.com/zahrakhatti/fairness-ml" target="_blank">View on GitHub</a>
+      <div class="badge-section">
+        <div><span class="badge">Education</span></div>
+        <div>Ph.D. — Lehigh University</div>
+        <div>M.Sc — Sharif University</div>
       </div>
-      <div class="project">
-        <h3>Fair Clustering in GAMS</h3>
-        <p>Optimization-based clustering with fairness constraints.</p>
-        <a href="https://github.com/zahrakhatti/fair-clustering" target="_blank">View on GitHub</a>
+    </section>
+
+    <!-- Right column -->
+    <section class="main-column">
+      <div class="card about" aria-labelledby="about-title">
+        <div class="section-title" id="about-title">About</div>
+        <div>
+          I’m a graduate student at Lehigh University focusing on fairness in machine learning and nonlinear optimization. I develop fairness-aware neural networks, implement constrained optimization, and conduct rigorous research and experiments.
+        </div>
       </div>
-      <div class="project">
-        <h3>Multi-Stage Financial Planning</h3>
-        <p>Optimized financial planning using scenario reduction and nested decomposition.</p>
+
+      <div class="card">
+        <div class="section-title">Projects & Work</div>
+        <div class="projects">
+          <article class="project">
+            <h4>Fairness-Constrained Neural Nets</h4>
+            <div class="meta">PyTorch models enforcing fairness via constraints — <a href="https://github.com/zahrakhatti/fairness-project" target="_blank" rel="noopener">View on GitHub</a></div>
+          </article>
+
+          <article class="project">
+            <h4>Fair Clustering in GAMS</h4>
+            <div class="meta">Optimization-based clustering with fairness constraints — <a href="#">GitHub</a></div>
+          </article>
+
+          <article class="project">
+            <h4>Multi-Stage Financial Planning</h4>
+            <div class="meta">Scenario reduction & nested decomposition — <a href="#">More</a></div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="container">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Lehigh University (2023–Present)</strong> – Ph.D. in Industrial & Systems Engineering</li>
-      <li><strong>Sharif University of Technology (2019–2022)</strong> – M.Sc. Industrial Engineering</li>
-      <li><strong>K.N. Toosi University of Technology (2015–2019)</strong> – B.Sc. Industrial Engineering</li>
-    </ul>
-  </section>
-
-  <!-- PUBLICATIONS -->
-  <section id="publications" class="container">
-    <h2>Publications</h2>
-    <ul>
-      <li>
-        <a href="https://arxiv.org/abs/2505.15788" target="_blank">
-        Fair supervised learning through constraints on smooth nonconvex unfairness-measure surrogates (arXiv, 2025)
-        </a>
-      </li>
-    </ul>
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Zahra Khatti | <a href="resume.pdf" target="_blank">Download Resume</a></p>
-    </div>
-  </footer>
+      <div class="card">
+        <div class="section-title">Publications & News</div>
+        <div class="meta-list">
+          • 2025: Co-chairing the 2026 MOPTA conference at Lehigh University.<br>
+          • 2025: Fair supervised learning through constraints (arXiv).<br>
+          • 2024: Recognition for constraint-based fairness methods.
+        </div>
+        <div class="footer">© 2025 Zahra Khatti — <a href="/resume.pdf">Download resume</a></div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
