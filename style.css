@@ -1,6 +1,6 @@
 /* ---------- THEME VARIABLES ---------- */
 :root{
-  --bg: #0f0f10;           /* dark background */
+  --bg: #0f0f10;           
   --card: #121214;
   --muted: #bdbdbf;
   --text: #eef0f2;
@@ -79,6 +79,19 @@ h1{margin:0;font-size:1.25rem}
   background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border:1px solid rgba(255,255,255,0.02);
   font-size:0.9rem;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.links a svg{
+  vertical-align: middle;
+  transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.links a:hover svg{
+  transform: translateY(-2px);
+  fill: var(--accent);
 }
 
 .badge-section{margin-top:14px;font-size:0.9rem;color:var(--muted)}
