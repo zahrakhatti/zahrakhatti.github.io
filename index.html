@@ -13,163 +13,205 @@
 </head>
 <body>
   <main class="wrap" role="main" aria-labelledby="name">
-    <!-- Left column -->
-    <section class="card" aria-label="profile">
-      <div class="profile">
-        <span class="photo" aria-hidden="true">
-          <!-- Replace with your actual photo -->
-          <!-- <img src="profile.jpg" alt="Zahra Khatti photo" /> -->
-          <div class="photo-placeholder">ZK</div>
-        </span>
-        <div>
+    <!-- Left sidebar -->
+    <aside class="sidebar">
+      <div class="card profile-card">
+        <div class="profile">
+          <div class="photo">
+            <!-- Replace with your actual photo -->
+            <!-- <img src="profile.jpg" alt="Zahra Khatti photo" /> -->
+            <div class="photo-placeholder">ZK</div>
+          </div>
           <h1 id="name">Zahra Khatti</h1>
-          <div class="role">Ph.D. Student — Industrial & Systems Engineering</div>
-          <div class="links">
-            <a href="mailto:zahra@example.com" aria-label="Email">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm0 2.236V20h16V6.236l-8 7-8-7z"/>
-              </svg>
-              Email
-            </a>
-            <a href="https://github.com/zahrakhatti" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.84 10.96.57.1.78-.25.78-.55 0-.27-.01-1.14-.02-2.07-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.18-3.12-.12-.29-.51-1.44.11-3 0 0 .96-.31 3.14 1.18a10.85 10.85 0 015.72 0c2.17-1.49 3.13-1.18 3.13-1.18.62 1.56.23 2.71.11 3 .73.82 1.18 1.86 1.18 3.12 0 4.43-2.7 5.41-5.27 5.7.41.35.77 1.04.77 2.1 0 1.52-.01 2.75-.01 3.13 0 .3.21.65.79.54A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-              </svg>
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.851-3.037-1.851 0-2.134 1.445-2.134 2.939v5.667H9.356V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.369-1.85 3.602 0 4.267 2.37 4.267 5.456v6.285zM5.337 7.433a2.062 2.062 0 11.001-4.124 2.062 2.062 0 010 4.124zM6.558 20.452H4.116V9h2.442v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.728C24 .774 23.2 0 22.225 0z"/>
-              </svg>
-              LinkedIn
-            </a>
-          </div>
+          <div class="role">Ph.D. Student<br>Industrial & Systems Engineering</div>
+          <div class="location">📍 Bethlehem, Pennsylvania</div>
         </div>
-      </div>
 
-      <div class="badge-section">
-        <div class="badge-group">
-          <div><span class="badge">Education</span></div>
-          <div class="badge-list">
-            <div>Ph.D. — Lehigh University</div>
-            <div>M.Sc — Sharif University</div>
-          </div>
-        </div>
-        
-        <div class="badge-group">
-          <div><span class="badge">Location</span></div>
-          <div class="badge-list">
-            <div>Bethlehem, Pennsylvania</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Right column -->
-    <section class="main-column">
-      <div class="card about" aria-labelledby="about-title">
-        <div class="section-title" id="about-title">About</div>
-        <div class="about-text">
-          I'm a graduate student at Lehigh University focusing on fairness in machine learning and nonlinear optimization. My research combines theoretical foundations with practical implementations to develop fairness-aware neural networks and constrained optimization methods. I'm passionate about creating AI systems that are not only powerful but also equitable and transparent.
+        <div class="links">
+          <a href="mailto:zahra@example.com" class="link-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm0 2.236V20h16V6.236l-8 7-8-7z"/>
+            </svg>
+            Email
+          </a>
+          <a href="https://github.com/zahrakhatti" target="_blank" rel="noopener" class="link-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.84 10.96.57.1.78-.25.78-.55 0-.27-.01-1.14-.02-2.07-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.18-3.12-.12-.29-.51-1.44.11-3 0 0 .96-.31 3.14 1.18a10.85 10.85 0 015.72 0c2.17-1.49 3.13-1.18 3.13-1.18.62 1.56.23 2.71.11 3 .73.82 1.18 1.86 1.18 3.12 0 4.43-2.7 5.41-5.27 5.7.41.35.77 1.04.77 2.1 0 1.52-.01 2.75-.01 3.13 0 .3.21.65.79.54A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" class="link-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.851-3.037-1.851 0-2.134 1.445-2.134 2.939v5.667H9.356V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.369-1.85 3.602 0 4.267 2.37 4.267 5.456v6.285zM5.337 7.433a2.062 2.062 0 11.001-4.124 2.062 2.062 0 010 4.124zM6.558 20.452H4.116V9h2.442v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.728C24 .774 23.2 0 22.225 0z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="/resume.pdf" class="link-item resume-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+            </svg>
+            Resume
+          </a>
         </div>
       </div>
 
       <div class="card">
-        <div class="section-title">Research & Projects</div>
-        <div class="projects">
-          <article class="project">
-            <h4>Fairness-Constrained Neural Networks</h4>
-            <div class="project-meta">
-              Developing PyTorch models that enforce fairness constraints during training through novel optimization techniques.
-              <br><a href="https://github.com/zahrakhatti/fairness-project" target="_blank" rel="noopener">View on GitHub →</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <h4>Fair Clustering in GAMS</h4>
-            <div class="project-meta">
-              Optimization-based clustering algorithms with integrated fairness constraints for equitable data partitioning.
-              <br><a href="#" target="_blank" rel="noopener">View Project →</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <h4>Multi-Stage Financial Planning</h4>
-            <div class="project-meta">
-              Advanced stochastic optimization using scenario reduction and nested decomposition methods for robust financial planning.
-              <br><a href="#" target="_blank" rel="noopener">Learn More →</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <h4>Constraint-Based ML Framework</h4>
-            <div class="project-meta">
-              A comprehensive framework for integrating domain constraints into machine learning pipelines with theoretical guarantees.
-              <br><a href="#" target="_blank" rel="noopener">Documentation →</a>
-            </div>
-          </article>
+        <h3>Education</h3>
+        <div class="education-item">
+          <div class="degree">Ph.D. Industrial & Systems Engineering</div>
+          <div class="school">Lehigh University</div>
+          <div class="year">2022 - Present</div>
+        </div>
+        <div class="education-item">
+          <div class="degree">M.Sc. Industrial Engineering</div>
+          <div class="school">Sharif University</div>
+          <div class="year">2020 - 2022</div>
         </div>
       </div>
 
       <div class="card">
-        <div class="section-title">Technical Skills</div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h5>Programming</h5>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">PyTorch</span>
-              <span class="skill-tag">GAMS</span>
-              <span class="skill-tag">MATLAB</span>
-              <span class="skill-tag">R</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h5>Machine Learning</h5>
-            <div class="skill-tags">
-              <span class="skill-tag">Deep Learning</span>
-              <span class="skill-tag">Fairness ML</span>
-              <span class="skill-tag">Optimization</span>
-              <span class="skill-tag">Statistics</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h5>Tools & Frameworks</h5>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Jupyter</span>
-              <span class="skill-tag">LaTeX</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="section-title">Publications & News</div>
+        <h3>Latest News</h3>
         <div class="news-list">
           <div class="news-item">
-            <div class="news-year">2025</div>
-            <div class="news-content">Co-chairing the 2026 MOPTA conference at Lehigh University</div>
+            <div class="news-date">Jan 2025</div>
+            <div class="news-text">Co-chairing the 2026 MOPTA conference at Lehigh University</div>
           </div>
           <div class="news-item">
-            <div class="news-year">2025</div>
-            <div class="news-content">Fair supervised learning through constraints (arXiv preprint)</div>
+            <div class="news-date">Jan 2025</div>
+            <div class="news-text">Fair supervised learning through constraints (arXiv preprint)</div>
           </div>
           <div class="news-item">
-            <div class="news-year">2024</div>
-            <div class="news-content">Recognition for constraint-based fairness methods at ML conference</div>
+            <div class="news-date">Dec 2024</div>
+            <div class="news-text">Recognition for constraint-based fairness methods at ML conference</div>
           </div>
           <div class="news-item">
-            <div class="news-year">2024</div>
-            <div class="news-content">Best paper award for optimization research at INFORMS annual meeting</div>
+            <div class="news-date">Nov 2024</div>
+            <div class="news-text">Best paper award for optimization research at INFORMS</div>
           </div>
-        </div>
-        
-        <div class="footer">
-          © 2025 Zahra Khatti — <a href="/resume.pdf">Download Resume</a> · <a href="#contact">Contact</a>
         </div>
       </div>
+    </aside>
+
+    <!-- Main content -->
+    <section class="main-content">
+      <div class="card about-card">
+        <h2>About Me</h2>
+        <p>I'm a graduate student at Lehigh University focusing on fairness in machine learning and nonlinear optimization. My research combines theoretical foundations with practical implementations to develop fairness-aware neural networks and constrained optimization methods.</p>
+        <p>I'm passionate about creating AI systems that are not only powerful but also equitable and transparent. My work bridges the gap between mathematical optimization theory and real-world applications in machine learning fairness.</p>
+      </div>
+
+      <div class="card">
+        <h2>Research & Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h4>Fairness-Constrained Neural Networks</h4>
+            <p>Developing PyTorch models that enforce fairness constraints during training through novel optimization techniques. This work addresses bias in machine learning models at the algorithmic level.</p>
+            <div class="project-links">
+              <a href="https://github.com/zahrakhatti/fairness-project" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Paper</a>
+            </div>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Fairness</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <h4>Fair Clustering in GAMS</h4>
+            <p>Optimization-based clustering algorithms with integrated fairness constraints for equitable data partitioning. Implements mathematical programming approaches to ensure balanced representation.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Documentation</a>
+            </div>
+            <div class="project-tags">
+              <span class="tag">GAMS</span>
+              <span class="tag">Optimization</span>
+              <span class="tag">Clustering</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <h4>Multi-Stage Financial Planning</h4>
+            <p>Advanced stochastic optimization using scenario reduction and nested decomposition methods for robust financial planning. Handles uncertainty in multi-period decision making.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Details</a>
+              <a href="#" target="_blank" rel="noopener">Results</a>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Stochastic Optimization</span>
+              <span class="tag">Finance</span>
+              <span class="tag">MATLAB</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <h4>Constraint-Based ML Framework</h4>
+            <p>A comprehensive framework for integrating domain constraints into machine learning pipelines with theoretical guarantees. Provides tools for constraint specification and enforcement.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Docs</a>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Framework</span>
+              <span class="tag">Constraints</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Technical Skills</h2>
+        <div class="skills-section">
+          <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag expert">Python</span>
+              <span class="skill-tag expert">MATLAB</span>
+              <span class="skill-tag proficient">R</span>
+              <span class="skill-tag proficient">GAMS</span>
+              <span class="skill-tag basic">Julia</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Machine Learning & AI</h4>
+            <div class="skill-tags">
+              <span class="skill-tag expert">PyTorch</span>
+              <span class="skill-tag expert">Scikit-learn</span>
+              <span class="skill-tag proficient">TensorFlow</span>
+              <span class="skill-tag proficient">Fairness ML</span>
+              <span class="skill-tag expert">Deep Learning</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Optimization & Mathematics</h4>
+            <div class="skill-tags">
+              <span class="skill-tag expert">Linear Programming</span>
+              <span class="skill-tag expert">Nonlinear Optimization</span>
+              <span class="skill-tag proficient">Stochastic Programming</span>
+              <span class="skill-tag expert">Constrained Optimization</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Tools & Platforms</h4>
+            <div class="skill-tags">
+              <span class="skill-tag proficient">Git</span>
+              <span class="skill-tag proficient">Docker</span>
+              <span class="skill-tag expert">Jupyter</span>
+              <span class="skill-tag expert">LaTeX</span>
+              <span class="skill-tag basic">AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© 2025 Zahra Khatti. Built with care and attention to detail.</p>
+      </footer>
     </section>
   </main>
 </body>
