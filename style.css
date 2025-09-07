@@ -232,6 +232,23 @@ h1 {
   margin-bottom: 2px;
 }
 
+.school a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.school a:hover {
+  color: var(--accent-light);
+}
+
+.advisors {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 4px;
+}
+
 .year {
   color: var(--muted);
   font-size: 0.85rem;
@@ -459,64 +476,6 @@ h1 {
   color: white;
 }
 
-/* ---------- SKILLS ---------- */
-.skills-section {
-  display: grid;
-  gap: 24px;
-}
-
-.skill-category {
-  background: var(--glass);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 20px;
-}
-
-.skill-category h4 {
-  color: var(--accent-light);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skill-tag {
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border: 1px solid;
-  transition: all 0.2s ease;
-}
-
-.skill-tag.expert {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
-}
-
-.skill-tag.proficient {
-  background: rgba(139, 92, 246, 0.2);
-  color: var(--accent-light);
-  border-color: var(--accent-light);
-}
-
-.skill-tag.basic {
-  background: var(--glass);
-  color: var(--text-secondary);
-  border-color: var(--border);
-}
-
-.skill-tag:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
 /* ---------- FOOTER ---------- */
 .footer {
   margin-top: 40px;
@@ -558,10 +517,6 @@ h1 {
   
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .skill-tags {
-    justify-content: center;
   }
   
   .main-content h2 {
