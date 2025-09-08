@@ -323,14 +323,14 @@ h1 {
 }
 
 .about-card a {
-  color: #f59e0b; /* amber/orange accent for better readability */
+  color: #8f7bff; 
   font-weight: 600;
   text-decoration: none;
 }
 
 .about-card a:hover {
   text-decoration: underline;
-  color: #fbbf24; /* lighter amber on hover */
+  color: #8f7bff; /* lighter amber on hover */
 }
 
 
