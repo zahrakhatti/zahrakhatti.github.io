@@ -323,12 +323,13 @@ h1 {
 }
 
 .about-card a {
-  color: #8b5cf6; /* or any accent color that contrasts with dark background */
-  text-decoration: none;
+  color: #38bdf8; /* bright light blue */
   font-weight: 600;
+  text-decoration: none;
 }
 
 .about-card a:hover {
+  color: #0ea5e9; /* slightly darker/light hover effect */
   text-decoration: underline;
 }
 
