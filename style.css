@@ -323,15 +323,16 @@ h1 {
 }
 
 .about-card a {
-  color: #38bdf8; /* bright light blue */
+  color: #f59e0b; /* amber/orange accent for better readability */
   font-weight: 600;
   text-decoration: none;
 }
 
 .about-card a:hover {
-  color: #0ea5e9; /* slightly darker/light hover effect */
   text-decoration: underline;
+  color: #fbbf24; /* lighter amber on hover */
 }
+
 
 
 /* ---------- PROJECTS ---------- */
