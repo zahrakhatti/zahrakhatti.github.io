@@ -322,6 +322,17 @@ h1 {
   margin-bottom: 0;
 }
 
+.about-card a {
+  color: #8b5cf6; /* or any accent color that contrasts with dark background */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about-card a:hover {
+  text-decoration: underline;
+}
+
+
 /* ---------- PROJECTS ---------- */
 .projects-grid {
   display: grid;
