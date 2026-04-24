@@ -333,6 +333,33 @@ h1 {
   color: #8f7bff; /* lighter amber on hover */
 }
 
+.dog-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.dog-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.dog-caption {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 !important;
+  line-height: 1.5;
+}
+
 
 
 /* ---------- PROJECTS ---------- */
