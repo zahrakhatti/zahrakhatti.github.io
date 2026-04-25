@@ -343,10 +343,10 @@ h1 {
 }
 
 .dog-photo {
-  width: 60px;
-  height: 60px;
-  max-width: 60px;
-  max-height: 60px;
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
