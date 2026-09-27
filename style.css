@@ -23,9 +23,10 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
+html {
+  min-height: 100%;
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 body {
@@ -411,6 +412,13 @@ h1 {
   margin-bottom: 12px;
 }
 
+.project-status {
+  color: var(--accent-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: -6px 0 12px;
+}
+
 .project p {
   color: var(--text-secondary);
   font-size: 0.95rem;
@@ -530,6 +538,23 @@ h1 {
 .footer p {
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.footer-links a {
+  color: var(--accent-light);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* ---------- ANIMATIONS ---------- */
