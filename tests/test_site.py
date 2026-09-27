@@ -17,6 +17,7 @@ class SiteContentTests(unittest.TestCase):
 
         self.assertNotIn("Co-chairing the 2026 MOPTA", page)
         self.assertNotIn("© 2025", page)
+        self.assertNotIn("Hugging Face/PEFT", page)
 
     def test_current_publications_and_projects_are_linked(self):
         page = (ROOT / "index.html").read_text(encoding="utf-8")
