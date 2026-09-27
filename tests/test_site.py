@@ -35,6 +35,18 @@ class SiteContentTests(unittest.TestCase):
         self.assertNotIn("Fair Clustering", page)
         self.assertNotIn("fair-clustering", page)
         self.assertIn("Open-source Python package · v0.1.0", page)
+        self.assertIn(
+            "Low-Order Explicit Hessian Imitation Method for Large-Scale Supervised Machine Learning",
+            page,
+        )
+        for removed_text in (
+            "Co-authored a new preprint on low-order Hessian imitation",
+            "Constrained LoRA Fine-Tuning for Bias-Controlled LLMs",
+            "Hugging Face PEFT/LoRA",
+            "<h4>Low-Order Hessian Imitation</h4>",
+        ):
+            with self.subTest(removed_text=removed_text):
+                self.assertNotIn(removed_text, page)
 
     def test_local_assets_exist(self):
         page = (ROOT / "index.html").read_text(encoding="utf-8")
