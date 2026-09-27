@@ -25,10 +25,16 @@ class SiteContentTests(unittest.TestCase):
             "https://arxiv.org/abs/2505.15788",
             "https://arxiv.org/abs/2605.06945",
             "https://github.com/zahrakhatti/fairget",
+            "https://github.com/zahrakhatti/fairget/releases/tag/v0.1.0",
             "https://github.com/zahrakhatti/as-ipm",
+            "https://coral.ise.lehigh.edu/mopta2026/committee/",
         ):
             with self.subTest(url=url):
                 self.assertIn(url, page)
+
+        self.assertNotIn("Fair Clustering", page)
+        self.assertNotIn("fair-clustering", page)
+        self.assertIn("Open-source Python package · v0.1.0", page)
 
     def test_local_assets_exist(self):
         page = (ROOT / "index.html").read_text(encoding="utf-8")
